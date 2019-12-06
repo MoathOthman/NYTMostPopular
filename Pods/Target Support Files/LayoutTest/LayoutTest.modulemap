@@ -1,0 +1,6 @@
+framework module LayoutTest {
+  umbrella header "LayoutTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

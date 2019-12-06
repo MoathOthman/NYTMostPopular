@@ -1,0 +1,91 @@
+PODS:
+  - LayoutTest/Swift (6.0.1):
+    - LayoutTest/SwiftSubspec
+  - LayoutTest/SwiftSubspec (6.0.1):
+    - LayoutTest/TestCase
+    - LayoutTestBase/Swift (= 6.0.1)
+  - LayoutTest/TestCase (6.0.1):
+    - LayoutTestBase/Autolayout (= 6.0.1)
+    - LayoutTestBase/Catalog (= 6.0.1)
+    - LayoutTestBase/Config (= 6.0.1)
+    - LayoutTestBase/Core (= 6.0.1)
+    - LayoutTestBase/UIViewHelpers (= 6.0.1)
+  - LayoutTestBase/Autolayout (6.0.1)
+  - LayoutTestBase/Catalog (6.0.1):
+    - LayoutTestBase/Core
+  - LayoutTestBase/Config (6.0.1)
+  - LayoutTestBase/Core (6.0.1):
+    - LayoutTestBase/Config
+  - LayoutTestBase/Swift (6.0.1):
+    - LayoutTestBase/Autolayout
+    - LayoutTestBase/Catalog
+    - LayoutTestBase/Config
+    - LayoutTestBase/Core
+    - LayoutTestBase/UIViewHelpers
+  - LayoutTestBase/UIViewHelpers (6.0.1):
+    - LayoutTestBase/Config
+  - Mockingjay (2.0.1):
+    - Mockingjay/Core (= 2.0.1)
+    - Mockingjay/XCTest (= 2.0.1)
+  - Mockingjay/Core (2.0.1):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.1):
+    - Mockingjay/Core
+  - Nimble (8.0.4)
+  - ObjectMapper (3.5.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SDWebImage (5.2.3):
+    - SDWebImage/Core (= 5.2.3)
+  - SDWebImage/Core (5.2.3)
+  - SwiftLint (0.35.0)
+  - Toast-Swift (5.0.0)
+  - URITemplate (2.0.3)
+
+DEPENDENCIES:
+  - LayoutTest/Swift
+  - Mockingjay
+  - Nimble
+  - ObjectMapper
+  - RxCocoa
+  - RxSwift
+  - SDWebImage
+  - SwiftLint
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - LayoutTest
+    - LayoutTestBase
+    - Mockingjay
+    - Nimble
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SwiftLint
+    - Toast-Swift
+    - URITemplate
+
+SPEC CHECKSUMS:
+  LayoutTest: f05ff965f6a090fd00f289d0f52fa12b502388fa
+  LayoutTestBase: e087799bca531a58f5e8070cde036fb6185a76fa
+  Mockingjay: 11a621880d2887f1775bdcf824341eb68f218450
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SDWebImage: 46a7f73228f84ce80990c786e4372cf4db5875ce
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+
+PODFILE CHECKSUM: a30c80fd374a9f39972c39851e4da0eb57d8d2c9
+
+COCOAPODS: 1.8.4
