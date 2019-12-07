@@ -1,0 +1,58 @@
+{
+  "url": "https:\/\/www.nytimes.com\/2019\/12\/05\/us\/politics\/pete-buttigieg-mckinsey.html",
+  "adx_keywords": "Buttigieg, Pete (1982- );McKinsey & Co;Presidential Election of 2020;Consultants;Democratic Party;Nondisclosure Agreements",
+  "column": "The Long Run",
+  "section": "U.S.",
+  "byline": "By MICHAEL FORSYTHE",
+  "type": "Article",
+  "title": "When Pete Buttigieg Was One of McKinsey\u2019s \u2018Whiz Kids\u2019",
+  "abstract": "The candidate, citing a nondisclosure agreement, has been largely mum about his stint at \u201cthe firm.\u201d Former McKinsey employees helped fill in the blanks.",
+  "published_date": "2019-12-05",
+  "source": "The New York Times",
+  "id": 100000006828780,
+  "asset_id": 100000006828780,
+  "views": 1,
+  "des_facet": [
+    "PRESIDENTIAL ELECTION OF 2020"
+  ],
+  "org_facet": [
+    "MCKINSEY & CO",
+    "CONSULTANTS",
+    "DEMOCRATIC PARTY",
+    "NONDISCLOSURE AGREEMENTS"
+  ],
+  "per_facet": [
+    "BUTTIGIEG, PETE (1982- )"
+  ],
+  "geo_facet": "",
+  "media": [
+    {
+      "type": "image",
+      "subtype": "photo",
+      "caption": "Pete Buttigieg in 2004, the year he was awarded a Rhodes scholarship. Two years later, he was vying for a consulting job at McKinsey &amp; Company.",
+      "copyright": "Joe Raymond\/South Bend Tribune, via Associated Press",
+      "approved_for_syndication": 1,
+      "media-metadata": [
+        {
+          "url": "https:\/\/static01.nyt.com\/images\/2019\/12\/05\/multimedia\/00pete-mckinsey-01\/00pete-mckinsey-01-thumbStandard.jpg",
+          "format": "Standard Thumbnail",
+          "height": 75,
+          "width": 75
+        },
+        {
+          "url": "https:\/\/static01.nyt.com\/images\/2019\/12\/05\/multimedia\/00pete-mckinsey-01\/00pete-mckinsey-01-mediumThreeByTwo210.jpg",
+          "format": "mediumThreeByTwo210",
+          "height": 140,
+          "width": 210
+        },
+        {
+          "url": "https:\/\/static01.nyt.com\/images\/2019\/12\/05\/multimedia\/00pete-mckinsey-01\/00pete-mckinsey-01-mediumThreeByTwo440.jpg",
+          "format": "mediumThreeByTwo440",
+          "height": 293,
+          "width": 440
+        }
+      ]
+    }
+  ],
+  "uri": "nyt:\/\/article\/e53e5126-89ae-58f3-b1cb-7c24c33d1584"
+}

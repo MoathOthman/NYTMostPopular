@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '12.4'
+platform :ios, '13'
 
 target 'NYTMostVPopularArticles' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -16,8 +16,7 @@ target 'NYTMostVPopularArticles' do
     inherit! :search_paths
     pod 'Nimble'
     pod 'RxSwift'
-    pod 'Mockingjay'
-    pod 'ObjectMapper'
+    pod 'Mockingjay', '3.0.0-alpha.1'
     pod 'LayoutTest/Swift'
   end
 

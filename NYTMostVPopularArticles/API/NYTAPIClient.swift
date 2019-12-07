@@ -17,17 +17,17 @@ protocol APIClient {
 class NYTAPIClient: APIClient {
 
     private struct Cosntants {
-        static let baseURL = "http://api.nytimes.com/svc/mostpopular/v2/"
+        static let baseURL = "https://api.nytimes.com/svc/"
         static let APIKey = "ReF1cYEk6EGjiNzMxIbATloGhiCcB9xE"
     }
 
     private enum Path {
         static func viewed(period: String) -> String {
-            return "/viewed/" + period
+            return "mostpopular/v2/viewed/" + period + ".json"
         }
     }
 
-    let session = URLSession.shared
+    private let session = URLSession.shared
 
     private var query: String!
 
@@ -44,6 +44,6 @@ class NYTAPIClient: APIClient {
     }
 
     private func appendClientIdAndSecret(_ query: String) -> String {
-        return query + "&api-key=\(NYTAPIClient.Cosntants.APIKey)"
+        return query + "api-key=\(NYTAPIClient.Cosntants.APIKey)"
     }
 }

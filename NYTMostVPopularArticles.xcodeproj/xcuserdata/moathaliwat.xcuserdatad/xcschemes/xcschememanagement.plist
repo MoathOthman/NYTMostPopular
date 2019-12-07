@@ -7,7 +7,25 @@
 		<key>NYTMostVPopularArticles.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>14</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>ECE5A45123993A5D00DBEA6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECE5A46523993A5F00DBEA6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECE5A47023993A5F00DBEA6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
