@@ -30,11 +30,25 @@ class NYTAPIClientMock: APIClient {
 
 class ArticleFake {
     static var fakeArticle: Article {
-        return Article(abstractField: "", byline: "", id: 2, publishedDate: "", source: "", title: "", views: 2)
+        return Article(abstractField: "", byline: "", id: 2, publishedDate: "", source: "", title: "", views: 2, url: "rre")
     }
-    
+
     static var fakeArticleForDan: Article {
-        return Article(abstractField: "", byline: "DAN", id: 2, publishedDate: "", source: "", title: "", views: 2)
+        return Article(abstractField: "", byline: "DAN", id: 2, publishedDate: "", source: "", title: "", views: 2, url: "rre")
+    }
+
+    static var articleForLayoutTest: Article {
+        return Article(abstractField: """
+A member of the Saudi Air Force training to be a
+ pilot killed three people at Naval Air Station Pensacola before he
+was shot dead by officers responding to the scene, the authorities said.
+""",
+                       byline: "PATRICIA MAZZEI, THOMAS GI",
+                       id: 2,
+                       publishedDate: "2009-03-13",
+                       source: "Moath othman",
+                       title: "Trainee on Military Base Mounts Deadly Attack",
+                       views: 2, url: "rre")
     }
 }
 
@@ -57,7 +71,7 @@ class MostPopularViewModelMock: MostPopularViewModelProtocol {
     private(set) var numbersOfRowsCalled = false
     private(set) var indexSpy = IndexPath(row: 0, section: 0)
     var returnedArticleStub = ArticleFake.fakeArticle
-    
+
     func fetchData() {
         fetchDataCalled = true
     }

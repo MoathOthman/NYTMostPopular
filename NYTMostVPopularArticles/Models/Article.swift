@@ -34,7 +34,7 @@ struct Article: Codable, Equatable {
     let title: String
     let views: Int
     let url: String
-    
+
     enum CodingKeys: String, CodingKey {
         case abstractField = "abstract"
         case byline = "byline"

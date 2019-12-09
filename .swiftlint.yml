@@ -3,6 +3,7 @@ included:
   - NYTMostVPopularArticlesTests
 excluded:
   - Pods
+  - NYTMostVPopularArticlesTests/ArticleView+LayoutTest.swift
 analyzer_rules:
   - unused_declaration
   - unused_import

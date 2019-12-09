@@ -13,16 +13,18 @@ import UIKit
 class ArticleViewController: UIViewController {
 
     var viewModel: ArticleViewModel!
-    @IBOutlet private var titleLabel: UILabel!
-    @IBOutlet private var publishedBy: UILabel!
-    @IBOutlet private var publishedOn: UILabel!
-    @IBOutlet private var viewsNumber: UILabel!
-    @IBOutlet private var sourceLabel: UILabel!
-    @IBOutlet private var abstractLabel: UILabel!
-
+    // outlets needs to be internal/public for the layout test to work
+    //swiftlint:disable private_outlet
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var publishedBy: UILabel!
+    @IBOutlet var publishedOn: UILabel!
+    @IBOutlet var viewsNumber: UILabel!
+    @IBOutlet var sourceLabel: UILabel!
+    @IBOutlet var abstractLabel: UILabel!
+    //swiftlint:enable private_outlet
     let bag = DisposeBag()
     private var url: String?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,7 +42,7 @@ class ArticleViewController: UIViewController {
                 self.title = article.source
             }).disposed(by: bag)
     }
-    
+
     @IBAction private func showArticle(_ sender: Any) {
         guard let urlString = self.url, let url = URL(string: urlString) else {
             view.makeToast("Article is not available")

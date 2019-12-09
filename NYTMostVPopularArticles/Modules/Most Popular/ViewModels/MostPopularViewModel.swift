@@ -14,7 +14,7 @@ protocol MostPopularViewModelProtocol {
     func cellViewModel(forIndex index: IndexPath) -> MostPopularCellViewModel
     func article(forIndex index: IndexPath) -> Article
     func numbersOfRows(forSection section: Int) -> Int
-    
+
     var loading: Observable<Bool> { get }
 }
 

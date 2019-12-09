@@ -20,6 +20,7 @@
 		EC812645239E81720084D256 /* MostPopularViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC812644239E81720084D256 /* MostPopularViewModelTests.swift */; };
 		EC84B2E1239C420A00781D6D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84B2E0239C420A00781D6D /* Coordinator.swift */; };
 		EC84B2E3239C433A00781D6D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84B2E2239C433A00781D6D /* MainCoordinator.swift */; };
+		ECCC0967239EE5A500A0F52B /* ArticleView+LayoutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCC0966239EE5A500A0F52B /* ArticleView+LayoutTest.swift */; };
 		ECD1D47E239EA5B600E21B2C /* MostPopularViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1D47D239EA5B600E21B2C /* MostPopularViewControllerTests.swift */; };
 		ECE5A45623993A5D00DBEA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5A45523993A5D00DBEA6E /* AppDelegate.swift */; };
 		ECE5A45B23993A5D00DBEA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE5A45923993A5D00DBEA6E /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		EC812644239E81720084D256 /* MostPopularViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularViewModelTests.swift; sourceTree = "<group>"; };
 		EC84B2E0239C420A00781D6D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EC84B2E2239C433A00781D6D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		ECCC0966239EE5A500A0F52B /* ArticleView+LayoutTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleView+LayoutTest.swift"; sourceTree = "<group>"; };
 		ECD1D47D239EA5B600E21B2C /* MostPopularViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularViewControllerTests.swift; sourceTree = "<group>"; };
 		ECE5A45223993A5D00DBEA6E /* NYTMostVPopularArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTMostVPopularArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE5A45523993A5D00DBEA6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		ECE5A46923993A5F00DBEA6E /* NYTMostVPopularArticlesTests */ = {
 			isa = PBXGroup;
 			children = (
+				ECCC0966239EE5A500A0F52B /* ArticleView+LayoutTest.swift */,
 				ECD1D47C239EA59D00E21B2C /* Views */,
 				ECF1215A239DC81C005BE162 /* ViewModels */,
 				ECF12153239DB5A8005BE162 /* Models */,
@@ -662,6 +665,7 @@
 				ECF1215C239DC87B005BE162 /* MostPopularModelLayerTests.swift in Sources */,
 				ECE5A46B23993A5F00DBEA6E /* NYTMostVPopularArticlesTests.swift in Sources */,
 				ECF1215E239DC8C2005BE162 /* Mocks.swift in Sources */,
+				ECCC0967239EE5A500A0F52B /* ArticleView+LayoutTest.swift in Sources */,
 				ECF1214D239DAEF9005BE162 /* NYTAPIClientTests.swift in Sources */,
 				ECF12150239DB143005BE162 /* Uitilities.swift in Sources */,
 				ECD1D47E239EA5B600E21B2C /* MostPopularViewControllerTests.swift in Sources */,

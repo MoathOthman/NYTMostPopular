@@ -26,6 +26,9 @@ to run coverage use this command
 
 You can check the coverage in xcode as well in the Report navigator.
 
+### Layout testing
+The project uses [LayoutTest library](https://github.com/linkedin/LayoutTest-iOS) to perform layout testing which somewhere between UI and unit testing but run as a unit test, so its fast. *only covering the articleViewController
+
 ### Linting
 linting is executed through a build phase on each build. you may also run `./Pods/SwiftLint/swiftlint`
 

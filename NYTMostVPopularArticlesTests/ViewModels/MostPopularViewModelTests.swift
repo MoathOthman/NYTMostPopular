@@ -56,7 +56,7 @@ class MostPopularViewModelTests: XCTestCase {
         expect(loadingSignalSpy).toEventually(beFalse())
         expect(itemsSubjectSpy).toEventually(equal([ArticleFake.fakeArticle]))
     }
-    
+
     func testArticleForIndex_availableItem_shouldReturnMatchingArticle() {
         // given
         sut.items.onNext([ArticleFake.fakeArticle, ArticleFake.fakeArticleForDan])
@@ -66,7 +66,7 @@ class MostPopularViewModelTests: XCTestCase {
         // then
         expect(article) == ArticleFake.fakeArticleForDan
     }
-    
+
     func testCellViewModelForIndex_availableItem_shouldReturnMatchingViewModel() {
         // give
         sut.items.onNext([ArticleFake.fakeArticle, ArticleFake.fakeArticleForDan])
