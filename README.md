@@ -9,13 +9,15 @@ To Explicitly declare and isolate ruby dependencies we use **bundler**.
 
 # how to use 
 
-you probably wont need to run `pod install` but if you had issues with configurations you can use this command .
-
-run `gem install bundler && bundle install && bundle exec pod install` 
-* in case you had issue with ruby version you might install RVM , check **install RVM** section
-
 ## Run the project and tests
 open the workspace file in xcode and run using CMD+R , or CMD+U to run the unit tests.
+
+
+you probably wont need to run `pod install` but if you had issues with configurations you can use this command .
+
+`gem install bundler && bundle install && bundle exec pod install` 
+* in case you had issue with ruby version you might install RVM , check **install RVM** section
+
 
 ### Run tests through CLI
 you can use `bundle exec fastlane scan` or `bundle exec fastlane test device_name:"iPhone 11"`
@@ -33,7 +35,6 @@ The project uses [LayoutTest library](https://github.com/linkedin/LayoutTest-iOS
 linting is executed through a build phase on each build. you may also run `./Pods/SwiftLint/swiftlint`
 
 ## install RVM (if needed)
-You wont need to run `pod install` 
 
 ruby version used is the system ruby on mac wont work most likely. 
 You might need to install RVM  you can do that using 
