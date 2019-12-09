@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0Fd-fx-iyT">
-                                <rect key="frame" x="20" y="64" width="374" height="145.5"/>
+                                <rect key="frame" x="20" y="64" width="374" height="161.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" text="TITLE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh2-rG-xve">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="31.5"/>
@@ -62,20 +63,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="NcL-fc-pOS">
-                                        <rect key="frame" x="0.0" y="129.5" width="374" height="16"/>
+                                        <rect key="frame" x="0.0" y="129.5" width="374" height="32"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-DU-jqU">
-                                                <rect key="frame" x="0.0" y="0.0" width="97" height="16"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="32"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="LAl-Yb-p5o">
-                                                        <rect key="frame" x="0.0" y="0.0" width="17" height="16"/>
-                                                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="34" height="32"/>
+                                                        <color key="tintColor" name="black"/>
                                                         <accessibility key="accessibilityConfiguration" label="calender">
                                                             <bool key="isElement" value="YES"/>
                                                         </accessibility>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="748" text="published at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91k-fT-Rdh">
-                                                        <rect key="frame" x="22" y="0.0" width="75" height="16"/>
+                                                        <rect key="frame" x="39" y="0.0" width="75" height="32"/>
                                                         <accessibility key="accessibilityConfiguration" label="publishedat"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <nil key="textColor"/>
@@ -84,17 +85,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kZF-Vc-aQe">
-                                                <rect key="frame" x="284" y="0.0" width="90" height="16"/>
+                                                <rect key="frame" x="261" y="0.0" width="113" height="32"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="5AL-g3-iqJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="23" height="16"/>
-                                                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="46" height="32"/>
+                                                        <color key="tintColor" name="black"/>
                                                         <accessibility key="accessibilityConfiguration" label="viewsimage">
                                                             <bool key="isElement" value="YES"/>
                                                         </accessibility>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="748" text="# of views" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN4-a4-gDr">
-                                                        <rect key="frame" x="28" y="0.0" width="62" height="16"/>
+                                                        <rect key="frame" x="51" y="0.0" width="62" height="32"/>
                                                         <accessibility key="accessibilityConfiguration" label="views"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                         <nil key="textColor"/>
@@ -107,8 +108,8 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiG-u3-kmq">
-                                <rect key="frame" x="77" y="248" width="260" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <rect key="frame" x="77" y="264" width="260" height="50"/>
+                                <color key="backgroundColor" name="black"/>
                                 <accessibility key="accessibilityConfiguration" label="showarticle"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="FKP-os-hBG"/>
@@ -123,7 +124,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fRK-Ab-pSl" firstAttribute="trailing" secondItem="0Fd-fx-iyT" secondAttribute="trailing" constant="20" id="CMM-44-Se8"/>
                             <constraint firstItem="0Fd-fx-iyT" firstAttribute="top" secondItem="fRK-Ab-pSl" secondAttribute="top" constant="20" id="NH0-ZH-Di7"/>
@@ -150,5 +151,8 @@
     <resources>
         <image name="Symbol" width="23" height="15"/>
         <image name="calendar" width="17" height="16"/>
+        <namedColor name="black">
+            <color red="0.89623579545454546" green="0.89623579545454546" blue="0.89623579545454546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
