@@ -11,7 +11,7 @@ To Explicitly declare and isolate ruby dependencies we use bundler.
 you probably wont need to run `pod install` but if you had issues with configurations you can use this command .
 
 run `gem install bundler && bundle install && bundle exec pod install` 
-* in case you had issue with ruby version you might install RVM , check next section
+*in case you had issue with ruby version you might install RVM , check next section
 
 ## Run the project and tests
 open the workspace file in xcode and run using CMD+R , or CMD+U to run the unit tests.
@@ -20,6 +20,7 @@ open the workspace file in xcode and run using CMD+R , or CMD+U to run the unit 
 you can use `bundle exec fastlane scan` or `bundle exec fastlane test device_name:"iPhone 11"`
 
 to run coverage use `slather coverage -s --scheme NYTMostVPopularArticles --workspace ./NYTMostVPopularArticles.xcworkspace ./NYTMostVPopularArticles.xcodeproj`
+
 You can check the coverage in xcode as well in the Report navigator.
 
 ### Linting
