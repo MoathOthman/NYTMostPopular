@@ -30,7 +30,6 @@ You can check the coverage in xcode as well in the Report navigator.
 linting is executed through a build phase on each build. you may also run `./Pods/SwiftLint/swiftlint`
 
 ## install RVM (if needed)
-You wont need to run `pod install` 
 
 ruby version used is the system ruby on mac wont work most likely. 
 You might need to install RVM  you can do that using 
