@@ -63,9 +63,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-DU-jqU">
                                                 <rect key="frame" x="0.0" y="0.0" width="97" height="16"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="LAl-Yb-p5o">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="LAl-Yb-p5o">
                                                         <rect key="frame" x="0.0" y="0.0" width="17" height="16"/>
-                                                        <color key="tintColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="748" text="published at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91k-fT-Rdh">
                                                         <rect key="frame" x="22" y="0.0" width="75" height="16"/>
@@ -80,7 +80,7 @@
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="5AL-g3-iqJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="23" height="16"/>
-                                                        <color key="tintColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="748" text="# of views" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eN4-a4-gDr">
                                                         <rect key="frame" x="28" y="0.0" width="62" height="16"/>
@@ -94,11 +94,28 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiG-u3-kmq">
+                                <rect key="frame" x="77" y="248" width="260" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="FKP-os-hBG"/>
+                                    <constraint firstAttribute="height" constant="50" id="zot-Bp-4hn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Show Article">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="showArticle:" destination="5Ok-9e-uT4" eventType="touchUpInside" id="eZA-kn-WYJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fRK-Ab-pSl" firstAttribute="trailing" secondItem="0Fd-fx-iyT" secondAttribute="trailing" constant="20" id="CMM-44-Se8"/>
                             <constraint firstItem="0Fd-fx-iyT" firstAttribute="top" secondItem="fRK-Ab-pSl" secondAttribute="top" constant="20" id="NH0-ZH-Di7"/>
+                            <constraint firstItem="RiG-u3-kmq" firstAttribute="centerX" secondItem="fR8-IC-BY5" secondAttribute="centerX" id="T1a-mp-9pM"/>
+                            <constraint firstItem="RiG-u3-kmq" firstAttribute="top" secondItem="0Fd-fx-iyT" secondAttribute="bottom" constant="38.5" id="eej-0f-ZAl"/>
                             <constraint firstItem="0Fd-fx-iyT" firstAttribute="leading" secondItem="fRK-Ab-pSl" secondAttribute="leading" constant="20" id="yU5-f2-z6K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fRK-Ab-pSl"/>
@@ -118,7 +135,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Calendar" width="17" height="16"/>
         <image name="Symbol" width="23" height="15"/>
+        <image name="calendar" width="17" height="16"/>
     </resources>
 </document>

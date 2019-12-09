@@ -25,7 +25,6 @@ opt_in_rules:
   - extension_access_modifier
   - fallthrough
   - fatal_error_message
-  - file_name
   - first_where
   - flatmap_over_map_reduce
   - identical_operands

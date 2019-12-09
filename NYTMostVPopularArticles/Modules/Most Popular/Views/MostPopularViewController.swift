@@ -29,9 +29,6 @@ class MostPopularViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.dataSource = self
         layoutTableView()
         setupCell()
-
-        // Styling
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     private func bind() {

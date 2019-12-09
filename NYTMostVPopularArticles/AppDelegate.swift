@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions
         launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let navController = UINavigationController()
+        navController.navigationBar.prefersLargeTitles = true
         coordinator = MainCoordinator(navigationController: navController)
         coordinator?.start()
         self.window?.rootViewController = navController

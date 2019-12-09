@@ -8,7 +8,6 @@ target 'NYTMostVPopularArticles' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'Toast-Swift'
-    pod 'SDWebImage'
     # Formatting and linting
     pod 'SwiftLint'
     

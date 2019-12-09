@@ -21,7 +21,8 @@ class ArticleViewController: UIViewController {
     @IBOutlet private var abstractLabel: UILabel!
 
     let bag = DisposeBag()
-
+    private var url: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,7 +36,17 @@ class ArticleViewController: UIViewController {
                 self.viewsNumber.text = "\(article.views)"
                 self.sourceLabel.text = "Sourced by: " + article.source
                 self.abstractLabel.text = article.abstractField
+                self.url = article.url
+                self.title = article.source
             }).disposed(by: bag)
+    }
+    
+    @IBAction private func showArticle(_ sender: Any) {
+        guard let urlString = self.url, let url = URL(string: urlString) else {
+            view.makeToast("Article is not available")
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 }
 
