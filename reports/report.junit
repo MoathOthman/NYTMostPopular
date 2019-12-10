@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='NYTMostVPopularArticlesUITests.xctest' tests='20' failures='0'>
+  <testsuite name='NYTMostVPopularArticlesTests.ArticleResponseTests' tests='1' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.ArticleResponseTests' name='testDecoding_GivenValidJSON_shouldNotThrowAndError' time='0.003'/>
+  </testsuite>
+  <testsuite name='NYTMostVPopularArticlesTests.ArticleTests' tests='1' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.ArticleTests' name='testDecoding_GivenValidJSON_shouldNotThrowAndError' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTMostVPopularArticlesTests.ArticleViewControllerLayoutTests' tests='1' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.ArticleViewControllerLayoutTests' name='testLayout' time='0.300'/>
+  </testsuite>
+  <testsuite name='NYTMostVPopularArticlesTests.MostPopularModelLayerTests' tests='2' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularModelLayerTests' name='testGetArticles_shouldCallGetArticlesApi' time='0.001'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularModelLayerTests' name='testGetArticles_whenValidResponse_shouldReturnArticlesWithMatchingCount' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' tests='9' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testCellForRow_shouldCallViewModelWithIndexAndCellConfigureWithThatModel' time='0.003'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testNumberOfRowsInSection_matchViewModelInputAndResult' time='0.001'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testSettingViewModel_shouldCallFetchData' time='0.001'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testTableViewDidSelect_shouldCallRouteToArticleDetailOnTheCoordinator' time='0.002'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testViewController_shouldTableViewBeNotNil' time='0.002'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testViewController_shouldViewModelbeNotNil' time='0.001'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testViewDidLoad_setTableViewDataSource' time='0.001'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testViewDidLoad_setTableViewDelegate' time='0.002'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewControllerTests' name='testViewDidLoad_setTitle' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTMostVPopularArticlesTests.MostPopularViewModelTests' tests='4' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewModelTests' name='testArticleForIndex_availableItem_shouldReturnMatchingArticle' time='0.000'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewModelTests' name='testCellViewModelForIndex_availableItem_shouldReturnMatchingViewModel' time='0.000'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewModelTests' name='testFetchData_shouldCallGetArticlesAndStartLoading' time='0.001'/>
+    <testcase classname='NYTMostVPopularArticlesTests.MostPopularViewModelTests' name='testFetchData_whenArticlesAreFetched_shouldStopLoadingSignalAndFillItems' time='0.001'/>
+  </testsuite>
+  <testsuite name='NYTMostVPopularArticlesTests.NYTAPIClientTests' tests='2' failures='0'>
+    <testcase classname='NYTMostVPopularArticlesTests.NYTAPIClientTests' name='testGetMostPopularArticles_OnFail_shouldReturnNonilErrorAndNilResponse' time='0.014'/>
+    <testcase classname='NYTMostVPopularArticlesTests.NYTAPIClientTests' name='testGetMostPopularArticles_OnSuccess_shouldReturnNonilResponseAndNilError' time='0.012'/>
+  </testsuite>
+</testsuites>

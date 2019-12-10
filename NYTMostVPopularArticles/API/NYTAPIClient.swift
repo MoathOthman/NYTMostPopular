@@ -16,18 +16,18 @@ protocol APIClient {
 
 class NYTAPIClient: APIClient {
 
-    private struct Cosntants {
+    struct Cosntants {
         static let baseURL = "https://api.nytimes.com/svc/"
         static let APIKey = "ReF1cYEk6EGjiNzMxIbATloGhiCcB9xE"
     }
 
-    private enum Path {
+    enum Path {
         static func viewed(period: String) -> String {
             return "mostpopular/v2/viewed/" + period + ".json"
         }
     }
 
-    private let session = URLSession.shared
+    let session = URLSession.shared
 
     private var query: String!
 

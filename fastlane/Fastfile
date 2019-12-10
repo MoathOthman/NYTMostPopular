@@ -31,4 +31,12 @@ platform :ios do
       proj: "NYTMostVPopularArticles.xcodeproj",
     )
   end
+
+  lane :metrics do
+    scan(scheme: "NYTMostVPopularArticles", code_coverage: true, derived_data_path: "./DerivedData", output_directory: "./reports")
+    slather(cobertura_xml: true, jenkins: false, scheme: "NYTMostVPopularArticles", build_directory: "./DerivedData", output_directory: "./reports", proj: "./NYTMostVPopularArticles.xcodeproj")
+    lizard(source_folder: "./NYTMostVPopularArticles/**.swift", language: "swift", export_type: "xml", report_file: "reports/lizard-report.xml")
+    swiftlint(output_file: "./reports/swiftlint.txt", ignore_exit_status: true)
+    sonar
+  end
 end

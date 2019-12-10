@@ -1,4 +1,8 @@
-
+*.orig
+.scannerwork
+sonar-reports
+xcodebuild.log
+compile_commands.json
 ## User settings
 xcuserdata/
 giftogo/Pods/Pods.xcodeproj/xcuserdata/

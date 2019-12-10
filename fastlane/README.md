@@ -26,6 +26,11 @@ Description of what the lane does
 fastlane ios coverage
 ```
 
+### ios metrics
+```
+fastlane ios metrics
+```
+
 
 ----
 
