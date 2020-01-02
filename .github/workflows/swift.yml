@@ -1,0 +1,17 @@
+name: Swift
+
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: fast stuff
+      run: |
+        fastlane test
